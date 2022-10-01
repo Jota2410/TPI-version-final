@@ -1,0 +1,37 @@
+.header {
+    background-image: url(./ba1-oscura.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+/*----SECTOR PALACIO DE AGUAS----*/
+
+.parrafo {
+    font-size: 0.45cm ;
+}
+
+/*-----SECTOR ORADORES-------*/
+
+.steve {
+    height: 440.33px;
+} 
+
+/*-----SECTOR HONOLULU-------*/
+
+.parrafo-2 {
+    font-size: 0.34cm;
+}
+
+/*------SECTOR FORMULARIO------*/
+
+.ignite {
+    text-decoration: underline dotted;
+}
+
+.recordatorio{
+    font-size: 0.3cm;
+}
+
+
+
