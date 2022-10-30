@@ -60,12 +60,29 @@ function validarCorreo() {
     if (correo.value.match(validRegex)) {
         return true;
     } else {
-        alert("Introduzca un correo valido");
+        alert("introduzca un correo valido");
         return false;
     }
 }
 
 botonCalcular.addEventListener(`click`, validarCorreo);
+
+// funcion validar categoria
+
+function validarCategoria() {
+
+    let lengthCuatro = categoria.value.length
+
+    if (lengthCuatro == 1) {
+        return true;
+    } else {
+        alert("seleccione una categoria")
+        return false;
+    }
+
+}
+
+botonCalcular.addEventListener(`click`, validarCategoria);
 
 // funcion total pagar
 
@@ -74,15 +91,19 @@ function totalPagar() {
     let length = nombre.value.length;
     let lengthDos = apellido.value.length;
     let lengthTres = correo.value.length;
-    let totalValor = (cantidad.value) * valorTicket
+    let lengthCuatro = categoria.value.length;
+    let totalValor = (cantidad.value) * valorTicket;
 
     if (length == 0) {
         return false;
     } else if (lengthDos == 0) {
         return false;
-    }
-    else if (lengthTres == 0) {
+    } else if (lengthTres == 0) {
         return false;
+    } else if (lengthCuatro == 0) {
+        return false;
+    } else if (categoria.value == 0) {
+        totalValor = totalValor
     } else if (categoria.value == 1) {
         totalValor = totalValor - (totalValor * descuentoEstudiante);
     } else if (categoria.value == 2) {
